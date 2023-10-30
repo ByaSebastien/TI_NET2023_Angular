@@ -16,7 +16,7 @@ import { NavComponent } from './nav/nav.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DemoModule
+    DemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

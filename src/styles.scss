@@ -10,3 +10,33 @@
 body {
     height: 100%;
 }
+
+.chapter {
+    background-color: coral;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.chapter h2 {
+    background-color: purple;
+    color: chartreuse;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: purple;
+    color: chartreuse;
+}
+
+button:hover {
+    background-color: chartreuse;
+    color: purple;
+}
+
+button:disabled {
+    background-color: lightgrey;
+    color: gray;
+}
