@@ -23,6 +23,7 @@ const routes: Routes = [
   // }
   // Chargement des enfant de demo.module avec lazy loading
   { path: "demo", loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule) },
+  { path: "exo", loadChildren: () => import('./exo/exo.module').then(m => m.ExoModule) },
   { path: "**", redirectTo: 'home' }
 ];
 
