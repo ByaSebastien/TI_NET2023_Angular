@@ -1,6 +1,6 @@
 <div class="chapter">
     <h2>Chrono</h2>
-    <h3>{{second}}</h3>
+    <h3>{{second | toTime}}</h3>
     <button [disabled]="isRunning" (click)="start()">Start</button>
     <button [disabled]="!isRunning" (click)="pause()">Pause</button>
     <button (click)="reset()">Reset</button>
