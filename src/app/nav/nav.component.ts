@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Link } from '../models/link';
 
 @Component({
@@ -6,6 +6,35 @@ import { Link } from '../models/link';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent {
+export class NavComponent implements OnInit {
+
   links!: Link[];
+
+  ngOnInit(): void {
+    this.links = [
+      { title: 'Home', url: '/home' },
+      {
+        title: "Demo", children: [
+          { title: 'Bindings', url: "demo/demo01" },
+          { title: 'Pipes', url: "demo/demo02" },
+          { title: 'Directives', url: "demo/demo03" },
+        ], isVisible: false
+      },
+      {
+        title: "Exo", children: [
+          { title: 'Chrono', url: "exo/exo01" }
+        ], isVisible: false
+      }
+    ]
+  }
+
+  toggleLink(link: Link): void {
+    link.isVisible = true;
+  }
+
+  clearLink(): void {
+    for (let link of this.links) {
+      link.isVisible = false;
+    }
+  }
 }

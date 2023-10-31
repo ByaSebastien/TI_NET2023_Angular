@@ -10,5 +10,36 @@ nav {
         gap: 50px;
         align-items: center;
         height: 100%;
+
+        li {
+            position: relative;
+            background-color: chartreuse;
+            color: purple;
+
+            .active {
+                padding: 5px;
+                background-color: purple;
+                color: chartreuse;
+            }
+        }
+    }
+
+    .dropDown {
+        position: absolute;
+        flex-direction: column;
+        gap: 5px;
+        background-color: purple;
+        color: chartreuse;
+        height: fit-content;
+        padding: 5px;
+
+        li {
+            background-color: purple;
+            color: chartreuse;
+
+            a {
+                color: chartreuse;
+            }
+        }
     }
 }

@@ -1,22 +1,13 @@
 <nav>
     <ul>
-        <li>
-            <a routerLink="/home">Home</a>
-        </li>
-        <li>
-            <a routerLink="/demo/demo01">Demo01</a>
-        </li>
-        <li>
-            <a routerLink="/demo/demo02">Demo02</a>
-        </li>
-        <li>
-            <a routerLink="/demo/demo03">Demo03</a>
-        </li>
-        <li>
-            <a routerLink="/exo">Exo</a>
-        </li>
-        <li>
-            <a routerLink="/exo/exo01">Exo01</a>
+        <li *ngFor="let link of links" (mouseleave)="clearLink()">
+            <a *ngIf="link.url" [routerLink]="link.url">{{link.title}}</a>
+            <a *ngIf="!link.url" (mouseover)="toggleLink(link)" [ngClass]="{active: link.isVisible}">{{link.title}}</a>
+            <ul *ngIf="link.children && link.isVisible" class="dropDown">
+                <li *ngFor="let child of link.children">
+                    <a [routerLink]="child.url">{{child.title}}</a>
+                </li>
+            </ul>
         </li>
     </ul>
 </nav>
