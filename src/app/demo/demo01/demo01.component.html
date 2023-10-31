@@ -24,5 +24,6 @@
     <h2>Attribute binding</h2>
     <h3 [ngClass]="{'jour':isActive,'nuit': !isActive}">{{jacquouille}}</h3>
     <button (click)="toggleIsActive()">Toggle</button>
+    <!-- [] sur l'attribut obligatoire pour l'attribute binding -->
     <button [disabled]="isActive">Test</button>
 </div>

@@ -1,0 +1,20 @@
+<div class="chapter">
+    <h2>Demo sur les pipes</h2>
+    <p>Contenu de myString : {{myString}}</p>
+    <p>Uppercase : {{myString | uppercase}}</p>
+    <p>Lowercase : {{myString | lowercase}}</p>
+    <p>Titlecase : {{myString | titlecase}}</p>
+    <hr>
+    <p>Contenu de myDate : {{myDate}}</p>
+    <p>Date format : {{myDate | date : 'dd-MM-yyyy'}}</p>
+    <hr>
+    <p>Contenu de myNumber : {{myNumber}}</p>
+    <p>Currency : {{myNumber | currency : 'EUR'}}</p>
+    <hr>
+    <h3>Custome pipe</h3>
+    <p>myNumber tofahrenheit : {{myNumber | toFahrenheit}}</p>
+    <hr>
+    <p>myNumber : {{myNumber}}</p>
+    <p>ToCelsius : {{myNumber | convertTemp : 'c'}}</p>
+    <p>ToFahrenheit : {{myNumber | convertTemp : 'f'}}</p>
+</div>
