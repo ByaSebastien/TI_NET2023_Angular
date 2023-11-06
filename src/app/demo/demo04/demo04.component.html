@@ -1,0 +1,7 @@
+<div class="chapter">
+    <h2>Demo Input</h2>
+    <label for="prenom">Prenom parent : </label>
+    <input id="prenom" type="text" [(ngModel)]="prenom">
+    <p>Message de l'enfant : {{childMessage}}</p>
+    <app-enfant [prenomParent]="prenom" (eventEnfant)="reactToChildren($event)"></app-enfant>
+</div>

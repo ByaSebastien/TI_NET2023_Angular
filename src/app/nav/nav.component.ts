@@ -18,6 +18,7 @@ export class NavComponent implements OnInit {
           { title: 'Bindings', url: "demo/demo01" },
           { title: 'Pipes', url: "demo/demo02" },
           { title: 'Directives', url: "demo/demo03" },
+          { title: 'Input / Output', url: "demo/demo04" },
         ], isVisible: false
       },
       {

@@ -15,5 +15,4 @@ export class ConvertTempPipe implements PipeTransform {
         return 'Error'
     }
   }
-
 }

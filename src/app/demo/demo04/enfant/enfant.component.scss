@@ -1,0 +1,12 @@
+:host {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.child {
+    color: purple;
+    background-color: chartreuse;
+    border: 2px solid purple;
+    width: 80%;
+}

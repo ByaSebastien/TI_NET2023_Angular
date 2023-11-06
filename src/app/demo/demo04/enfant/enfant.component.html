@@ -1,0 +1,5 @@
+<div class="child">
+    <h3>Je suis l'enfant de {{prenomParent}}</h3>
+    <label for="message">Message : </label>
+    <input id="message" type="text" (input)="emitEvent()" [(ngModel)]="message">
+</div>
