@@ -23,7 +23,8 @@ export class NavComponent implements OnInit {
       },
       {
         title: "Exo", children: [
-          { title: 'Chrono', url: "exo/exo01" }
+          { title: 'Chrono', url: "exo/exo01" },
+          { title: 'Shopping list', url: "exo/exo02" }
         ], isVisible: false
       }
     ]

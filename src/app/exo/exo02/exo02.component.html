@@ -1,0 +1,8 @@
+<div class="chapter">
+    <h2>Shopping list</h2>
+    <label for="product">Product name : </label>
+    <input type="text" [(ngModel)]="productName">
+    <button (click)="add()">Ajouter</button>
+    <app-exo02-enfant [productListChild]="productList" (deleteEvent)="delete($event)" (minusEvent)="minusOne($event)"
+        (addEvent)="addOne($event)"></app-exo02-enfant>
+</div>

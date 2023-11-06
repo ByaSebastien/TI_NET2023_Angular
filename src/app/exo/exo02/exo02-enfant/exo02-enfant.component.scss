@@ -9,4 +9,11 @@
     background-color: chartreuse;
     border: 2px solid purple;
     width: 93%;
+
+    ul li {
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
