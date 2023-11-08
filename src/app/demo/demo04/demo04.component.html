@@ -3,5 +3,8 @@
     <label for="prenom">Prenom parent : </label>
     <input id="prenom" type="text" [(ngModel)]="prenom">
     <p>Message de l'enfant : {{childMessage}}</p>
-    <app-enfant [prenomParent]="prenom" (eventEnfant)="reactToChildren($event)"></app-enfant>
+    <app-enfant [prenomParent]="prenom" (eventEnfant)="reactToChildren($event)">
+        <h5 id="title">Title</h5>
+        <p>Coucou les louloux</p>
+    </app-enfant>
 </div>

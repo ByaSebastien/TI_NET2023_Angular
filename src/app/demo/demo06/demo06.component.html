@@ -1,0 +1,30 @@
+<div class="chapter">
+    <h2>Formulaire</h2>
+    <form [formGroup]="bookFormGroup" (ngSubmit)="onSubmit()">
+        <label for="title">Titre : </label>
+        <input type="text" id="title" formControlName="title">
+        <p *ngIf="bookFormGroup.get('title')?.touched && bookFormGroup.get('title')?.errors?.['required']"
+            class="error">Le titre est requis!</p>
+        <p *ngIf="bookFormGroup.get('title')?.touched && bookFormGroup.get('title')?.errors?.['maxlength']"
+            class="error">Le titre a maximum 100caracteres</p>
+        <label for="author">Auteur : </label>
+        <input type="text" id="author" formControlName="author">
+        <p *ngIf="bookFormGroup.get('author')?.touched && !bookFormGroup.get('author')?.valid" class="error">L'auteur
+            est
+            requis!</p>
+        <label for="desc">Description : </label>
+        <textarea id="desc" formControlName="description"></textarea>
+
+        <label for="cDate">Date de creation : </label>
+        <input type="date" id="cDate" formControlName="creationDate">
+        <p *ngIf="bookFormGroup?.get('creationDate')?.errors?.['beforeToday']" class="error">Doit etre avant ajd</p>
+
+        <label for="nbEdit">Nombre d'édition : </label>
+        <input type="number" id="nbEdit" formControlName="nbEdition">
+        <p *ngIf="bookFormGroup.get('nbEdition')?.touched && bookFormGroup.get('nbEdition')?.errors?.['required']"
+            class="error">Le nombre d'édition est requis!</p>
+        <p *ngIf="bookFormGroup.get('nbEdition')?.touched && bookFormGroup.get('nbEdition')?.errors?.['min']"
+            class="error">Minimum 1 </p>
+        <button type="submit">Valider</button>
+    </form>
+</div>

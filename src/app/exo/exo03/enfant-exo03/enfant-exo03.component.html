@@ -1,0 +1,11 @@
+<div class="child">
+    <h3>Parent list</h3>
+    <ul>
+        <li *ngFor="let product of shoppingList; let i = index">
+            <p>{{product.name}} {{product.quantity}}</p>
+            <button (click)="minusOne(i)">➖</button>
+            <button (click)="plusOne(i)">➕</button>
+            <button (click)="delete(i)">Supprimer</button>
+        </li>
+    </ul>
+</div>

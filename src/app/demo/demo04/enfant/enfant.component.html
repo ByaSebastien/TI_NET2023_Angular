@@ -2,4 +2,5 @@
     <h3>Je suis l'enfant de {{prenomParent}}</h3>
     <label for="message">Message : </label>
     <input id="message" type="text" (input)="emitEvent()" [(ngModel)]="message">
+    <ng-content select="#title"></ng-content>
 </div>

@@ -19,12 +19,15 @@ export class NavComponent implements OnInit {
           { title: 'Pipes', url: "demo/demo02" },
           { title: 'Directives', url: "demo/demo03" },
           { title: 'Input / Output', url: "demo/demo04" },
+          { title: 'Services', url: "demo/demo05" },
+          { title: 'Formulaire', url: "demo/demo06" },
         ], isVisible: false
       },
       {
         title: "Exo", children: [
           { title: 'Chrono', url: "exo/exo01" },
-          { title: 'Shopping list', url: "exo/exo02" }
+          { title: 'Shopping list', url: "exo/exo02" },
+          { title: 'Shopping list +', url: "exo/exo03" },
         ], isVisible: false
       }
     ]

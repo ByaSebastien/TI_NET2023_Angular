@@ -14,13 +14,75 @@ body {
 .chapter {
     background-color: coral;
     width: fit-content;
-    padding: 10px;
     margin: 10px auto;
+    border: 10px solid chartreuse;
+
+    input,
+    textarea {
+        background-color: yellow;
+    }
+
+    h2 {
+        background-color: purple;
+        color: chartreuse;
+    }
+
+    .child {
+        color: purple;
+        background-color: salmon;
+        border: 5px solid purple;
+        width: 93%;
+        margin: 10px;
+
+        ul li {
+            display: flex;
+            height: fit-content;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 }
 
-.chapter h2 {
-    background-color: purple;
-    color: chartreuse;
+.chapter:hover {
+    background-color: cyan;
+    width: fit-content;
+    margin: 10px auto;
+    border: 10px solid purple;
+
+    input,
+    textarea {
+        background-color: blue;
+        color: chartreuse;
+    }
+
+    h2 {
+        background-color: chartreuse;
+        color: purple;
+    }
+
+    .child {
+        color: chartreuse;
+        background-color: purple;
+        border: 5px solid chartreuse;
+        width: 93%;
+
+        ul li {
+            display: flex;
+            height: fit-content;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                background-color: chartreuse;
+                color: purple;
+            }
+
+            button:hover {
+                background-color: salmon;
+                color: chartreuse;
+            }
+        }
+    }
 }
 
 button {
@@ -64,5 +126,9 @@ ul {
 }
 
 a:hover {
+    color: red !important;
+}
+
+.error {
     color: red !important;
 }
