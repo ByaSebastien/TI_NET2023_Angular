@@ -6,9 +6,15 @@ import { FakeLoginForm } from 'src/app/models/fakeLoginForm';
 })
 export class FakeAuthService {
 
+  isConnected : boolean = false
   constructor() { }
 
-  login(loginForm: FakeLoginForm): boolean {
-    return loginForm.username === 'Bambino' && loginForm.password === 'Test1234=';
+  login(loginForm: FakeLoginForm) {
+    if( loginForm.username === 'Bambino' && loginForm.password === 'Test1234=')
+      this.isConnected = true
+  }
+
+  logout() {
+    this.isConnected = false
   }
 }

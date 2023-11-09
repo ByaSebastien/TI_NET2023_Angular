@@ -1,0 +1,10 @@
+<h3>Exemple routing</h3>
+
+<a routerLink="../target">Vers la cible</a>
+<!-- <button (click)="redirect()">Voyageons ensemble</button> -->
+<hr />
+<ul>
+  <li *ngFor="let s of monTab; let i = index;">
+    {{s}} - <button (click)="redirect(i)">Target</button>
+  </li>
+</ul>

@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{font-family: sans-serif;}
 *,
 *::before,
 *::after {
@@ -16,6 +18,7 @@ body {
     width: fit-content;
     margin: 10px auto;
     border: 10px solid chartreuse;
+    border-radius: 10px;
 
     input,
     textarea {
@@ -91,11 +94,12 @@ button {
     margin: 10px;
     background-color: purple;
     color: chartreuse;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: chartreuse;
-    color: purple;
+    background-color: violet;
+    color: greenyellow;
 }
 
 button:disabled {

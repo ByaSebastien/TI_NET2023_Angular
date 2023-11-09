@@ -19,7 +19,7 @@ export class Demo06Component {
       author: [null, [Validators.required]],
       description: [null],
       creationDate: [null, [Validators.required, this.beforeToday()]],
-      nbEdition: [1, [Validators.min(1), Validators.required]]
+      nbEdition: [null, [Validators.min(1), Validators.required]]
     });
   }
 

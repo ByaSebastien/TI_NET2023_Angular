@@ -6,6 +6,9 @@ import { Demo03Component } from './demo03/demo03.component';
 import { Demo04Component } from './demo04/demo04.component';
 import { Demo05Component } from './demo05/demo05.component';
 import { Demo06Component } from './demo06/demo06.component';
+import { Demo07Component } from './demo07/demo07.component';
+import { TargetComponent } from './demo07/target/target.component';
+import { isauthGuard } from '../shared/isauth.guard';
 
 const routes: Routes = [
   { path: "", redirectTo: "demo01", pathMatch: "full" },
@@ -15,6 +18,8 @@ const routes: Routes = [
   { path: "demo04", component: Demo04Component },
   { path: "demo05", component: Demo05Component },
   { path: "demo06", component: Demo06Component },
+  { path: "demo07", canActivate : [isauthGuard], component: Demo07Component },
+  { path: "target/:id", component: TargetComponent },
 ];
 
 @NgModule({

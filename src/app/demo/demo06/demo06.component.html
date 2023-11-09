@@ -21,9 +21,11 @@
 
         <label for="nbEdit">Nombre d'édition : </label>
         <input type="number" id="nbEdit" formControlName="nbEdition">
-        <p *ngIf="bookFormGroup.get('nbEdition')?.touched && bookFormGroup.get('nbEdition')?.errors?.['required']"
+        <p *ngIf="bookFormGroup.get('nbEdition')?.touched
+            && bookFormGroup.get('nbEdition')?.errors?.['required']"
             class="error">Le nombre d'édition est requis!</p>
-        <p *ngIf="bookFormGroup.get('nbEdition')?.touched && bookFormGroup.get('nbEdition')?.errors?.['min']"
+        <p *ngIf="bookFormGroup.get('nbEdition')?.touched
+        && bookFormGroup.get('nbEdition')?.errors?.['min']"
             class="error">Minimum 1 </p>
         <button type="submit">Valider</button>
     </form>

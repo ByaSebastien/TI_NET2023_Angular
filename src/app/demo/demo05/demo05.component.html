@@ -1,8 +1,12 @@
-<div class="chapter">
+<div class="chapter" *ngIf="!isConnected">
     <h2>Les services</h2>
     <label for="username">Login : </label>
     <input type="text" id="username" [(ngModel)]="username">
     <label for="password">Password : </label>
     <input type="password" id="password" [(ngModel)]="password">
     <button (click)="onSubmit()">Submit!</button>
+</div>
+
+<div class="chapter" *ngIf="isConnected">
+  <button (click)="logout()">Déconnexion</button>
 </div>

@@ -21,6 +21,7 @@ export class NavComponent implements OnInit {
           { title: 'Input / Output', url: "demo/demo04" },
           { title: 'Services', url: "demo/demo05" },
           { title: 'Formulaire', url: "demo/demo06" },
+          { title: 'Routing', url: "demo/demo07" },
         ], isVisible: false
       },
       {
