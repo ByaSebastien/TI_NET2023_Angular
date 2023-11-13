@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DemoModule } from './demo/demo.module';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { NavComponent } from './nav/nav.component';
     BrowserModule,
     AppRoutingModule,
     DemoModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

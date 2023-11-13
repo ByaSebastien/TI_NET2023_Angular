@@ -9,6 +9,8 @@ import { Demo06Component } from './demo06/demo06.component';
 import { Demo07Component } from './demo07/demo07.component';
 import { TargetComponent } from './demo07/target/target.component';
 import { isauthGuard } from '../shared/isauth.guard';
+import { Demo08Component } from './demo08/demo08.component';
+import { CreateComponent } from './demo08/create/create.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "demo01", pathMatch: "full" },
@@ -18,7 +20,9 @@ const routes: Routes = [
   { path: "demo04", component: Demo04Component },
   { path: "demo05", component: Demo05Component },
   { path: "demo06", component: Demo06Component },
-  { path: "demo07", canActivate : [isauthGuard], component: Demo07Component },
+  { path: "demo07", canActivate: [isauthGuard], component: Demo07Component },
+  { path: "demo08", component: Demo08Component },
+  { path: "demo08/create", component: CreateComponent },
   { path: "target/:id", component: TargetComponent },
 ];
 

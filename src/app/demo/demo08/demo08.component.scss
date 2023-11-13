@@ -1,0 +1,35 @@
+.bookCard {
+    background-color: chartreuse;
+    color: purple;
+    border: 5px solid red;
+    border-radius: 30%;
+    padding: 20px;
+    transition: background-color 1s ease, color 1s ease;
+    /* Ajoutez d'autres propriétés avec "transition" si nécessaire */
+}
+
+.bookCard:hover {
+    background-color: purple;
+    color: chartreuse;
+}
+
+@keyframes appearing {
+    0% {
+        margin-left: -100px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+li {
+    margin-left: -100%;
+    opacity: 0;
+    animation-name: appearing;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}

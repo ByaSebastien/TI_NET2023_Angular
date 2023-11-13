@@ -12,6 +12,8 @@ import { Demo05Component } from './demo05/demo05.component';
 import { Demo06Component } from './demo06/demo06.component';
 import { Demo07Component } from './demo07/demo07.component';
 import { TargetComponent } from './demo07/target/target.component';
+import { Demo08Component } from './demo08/demo08.component';
+import { CreateComponent } from './demo08/create/create.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { TargetComponent } from './demo07/target/target.component';
     Demo05Component,
     Demo06Component,
     Demo07Component,
-    TargetComponent
+    TargetComponent,
+    Demo08Component,
+    CreateComponent
   ],
   imports: [
     CommonModule,
